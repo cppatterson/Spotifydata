@@ -2,7 +2,7 @@
 -- looked at what information was available
 SELECT * FROM Spotifydata;
 --Started to ask questions on the data
---What is the populatiry, danceability and energy by artist?
+--What is the popularity, danceability and energy by artist?
 SELECT artist_name, AVG(popularity), AVG(danceability), AVG(energy) 
 FROM Spotifydata
 GROUP BY artist_name;
